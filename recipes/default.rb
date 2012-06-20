@@ -7,7 +7,7 @@ when "lucid"
   include_recipe "libcap"
 
   packages |= %w/
-    libsc60
+    libisc60
   /
 when "precise"
   packages |= %w/
