@@ -1,7 +1,11 @@
+include_recipe "libxml2"
+
 packages = Array.new
 
 case node[:lsb][:codename]
 when "lucid"
+  include_recipe "libcap"
+
   packages |= %w/
     libsc60
   /
